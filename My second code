@@ -1,0 +1,16 @@
+# İstifadəçi siyahısı
+users = ["ramil", "admin", "python_dev"]
+password = "123"
+
+username = input("İstifadəçi adınızı yazın: ")
+user_pass = input("Şifrənizi yazın: ")
+
+# "in", "and" və "not" operatorlarının bir yerdə istifadəsi
+if username in users and user_pass == password:
+    print("Xoş gəldiniz! Sistemə giriş edildi.")
+elif username not in users:
+    print("Belə bir istifadəçi tapılmadı!")
+elif username in users and user_pass != password:
+    print("Şifrə səhvdir!")
+else:
+    print("Gözlənilməz xəta baş verdi.")
