@@ -1,0 +1,20 @@
+print("--- Virtual Lawyer Program ---")
+
+# Getting user's age
+age = int(input("Please enter your age: "))
+
+if age < 18:
+    print("You are protected under child rights.")
+elif age >= 18 and age < 65:
+    print("You are an adult citizen with full legal capacity.")
+else:
+    print("You are at retirement age; you may have special privileges.")
+
+# Asking for more information
+question = input("Do you want information about the Criminal Code? (yes/no): ")
+
+if question.lower() == "yes":
+    print("Please contact a real lawyer, I am just a simple code! :)")
+else:
+    print("Alright, have a great day!")
+    
